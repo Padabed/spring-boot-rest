@@ -1,4 +1,4 @@
-package com.nicotine.addiction.example.rest;
+package com.nicotine.addiction.example.rest.driverRest;
 
 public class DriverErrorResponse {
 
