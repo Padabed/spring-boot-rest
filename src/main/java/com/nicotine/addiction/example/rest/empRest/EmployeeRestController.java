@@ -1,6 +1,5 @@
 package com.nicotine.addiction.example.rest.empRest;
 
-import com.nicotine.addiction.example.dao.EmployeeDAO;
 import com.nicotine.addiction.example.entity.Employee;
 import com.nicotine.addiction.example.service.EmployeeService;
 import org.springframework.web.bind.annotation.*;
@@ -11,7 +10,7 @@ import java.util.List;
 @RequestMapping("/emp/api")
 public class EmployeeRestController {
 
-    private EmployeeService _employeeService;
+    private final EmployeeService _employeeService;
 
     public EmployeeRestController(EmployeeService employeeService ) {
         _employeeService = employeeService;
